@@ -1,11 +1,24 @@
 import Profile from "@/components/Profile";
 import Person from "@/components/Person";
+import TeaSet from "@/components/TeaSet";
+import TeaGathering from "@/components/TeaGathering";
+
 import { people } from "@/api";
+import Contador from "@/components/Contador";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       Olá, Turma!
+      <hr />
+      <Contador />
+      <hr />
+      <Contador />
+      <hr />
+      <TeaGathering />
+      <hr />
+      <TeaSet />
+      <hr />
       <Profile />
       Exemplo de expressão: {5 ** 3}
       <hr />
