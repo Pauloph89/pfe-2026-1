@@ -13,7 +13,7 @@ export default function GeradorTextoAleatorio({ children }) {
   }
   return (
     <>
-      <p>{indice}</p>
+      <p style={{ color: indice ? "red" : "green" }}>{indice}</p>
       <Texto msg={textos[indice]} />
       <Texto msg={textos[indice]} />
       <Texto msg="está fixo" />
