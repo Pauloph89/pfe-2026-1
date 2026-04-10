@@ -1,10 +1,13 @@
 import GeradorAleatorio from "@/components/GeradorAleatorio";
 import GeradorTextoAleatorio from "@/components/GeradorTextoAleatorio";
+import Link from "next/link";
 //import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div>
+      <Link href="/tarefas">Lista de Tarefas</Link>
+      <hr />
       <GeradorAleatorio />
       <hr />
       <GeradorAleatorio />
